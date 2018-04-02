@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="it.SFApps.wifiqr"
+    android:versionCode="136"
+    android:versionName="1.18" >
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.front"
+        android:required="false" />
+    <!-- TODO replace above two with next line after Android 4.2 -->
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/new_icon"
+        android:label="@string/nome_app"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar"
+        android:name=".Base">
+
+
+        <service android:name=".tool.ServerService" />
+
+        <activity
+            android:name="it.SFApps.wifiqr.MainActivity"
+            android:label="@string/nome_app"
+            android:launchMode="singleTask" >
+           
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="it.SFApps.wifiqr.tool.DebugActivity">
+        </activity>
+        <activity
+            android:name="it.SFApps.wifiqr.music_explorer.activitys.AlbumActivity">
+        </activity>
+         <activity
+            android:name="it.SFApps.wifiqr.music_explorer.activitys.ArtistActivity">
+        </activity>
+        <activity
+            android:name="it.SFApps.wifiqr.music_explorer.activitys.GenreActivity">
+        </activity>
+        <activity
+            android:name="it.SFApps.wifiqr.playlist.PlayListActivity">
+        </activity>
+        <activity
+            android:name="ServerActivity"
+            android:parentActivityName="it.SFApps.wifiqr.MainActivity" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.SFApps.wifiqr.MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND_MULTIPLE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="it.SFApps.wifiqr.SettingsActivity"
+            android:label="@string/nome_app"
+            android:parentActivityName="it.SFApps.wifiqr.MainActivity" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.SFApps.wifiqr.MainActivity" />
+        </activity>
+        <activity
+            android:name="it.SFApps.wifiqr.SettingsPreferencesActivity"
+            android:label="@string/nome_app"
+            android:parentActivityName="it.SFApps.wifiqr.MainActivity" >
+
+            <!-- Parent activity meta-data to support API level 7+ -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="it.SFApps.wifiqr.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.google.zxing.client.android.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<resources>
+    <screenName name="it.SFApps.wifiqr.MainActivity">
+        Main Activity
+    </screenName>
+    <string name="ga_trackingId">UA-44723858-1</string>
+    <string name="ga_sampleFrequency">99.8</string>
+    <integer name="ga_sessionTimeout">2000</integer>
+    <bool name="ga_autoActivityTracking">true</bool>
+    <bool name="ga_anonymizeIp">true</bool>
+    <bool name="ga_reportUncaughtExceptions">true</bool>
+</resources>

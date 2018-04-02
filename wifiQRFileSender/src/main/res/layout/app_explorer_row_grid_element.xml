@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<it.SFApps.wifiqr.tool.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="150dp"
+    android:padding="10dp"
+    android:background="@drawable/layout_border" >
+    
+
+        <TextView
+        android:id="@+id/textViewElementName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="File Name"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:ellipsize="end"
+        
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/textViewElementName"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_launcher" />
+
+</it.SFApps.wifiqr.tool.CheckableRelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/IPCast.iml" filepath="$PROJECT_DIR$/IPCast.iml" />
+      <module fileurl="file://$PROJECT_DIR$/captureActivity/captureActivity.iml" filepath="$PROJECT_DIR$/captureActivity/captureActivity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wifiQRFileSender/wifiQRFileSender.iml" filepath="$PROJECT_DIR$/wifiQRFileSender/wifiQRFileSender.iml" />
+    </modules>
+  </component>
+</project>

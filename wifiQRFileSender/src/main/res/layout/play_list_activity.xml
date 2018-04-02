@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <it.SFApps.wifiqr.playlist.DynamicListView
+        android:id="@+id/listViewQueue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+    </it.SFApps.wifiqr.playlist.DynamicListView>
+
+</RelativeLayout>

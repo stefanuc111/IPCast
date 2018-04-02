@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lint>
+    <issue id="ExtraTranslation" severity="ignore" />
+    <issue id="MissingTranslation" severity="ignore" />
+    <issue id="NewApi">
+        <ignore path="src/it/SFApps/wifiqr/tool/Utils.java" />
+    </issue>
+</lint>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="old_nome_app">WifiQR File Transfer</string>
+    
+    <string name="nome_app">IPCast</string>
+    <string name="action_settings">Impostazioni</string>
+    <string name="clear_selection">Cancella selezione file</string>
+    <string name="confirm_selection">Avvia server</string>
+    <string name="scanQR">Scansiona codice QR</string>
+    <string name="auto_download">Auto download</string>
+    <string name="auto_download_summ">Avvia automaticamente il download</string>
+    <string name="srv_port">Porta server</string>
+    <string name="srv_port_summ">imposta la porta del server</string>
+    <string name="scan_or_type">Scansiona o inserisci nel browser:</string>
+    <string name="select_files">Seleziona file</string>
+    <string name="empty">Nessun file o cartella presente</string>
+    <string name="creating_ap">Wifi non connesso, avviato un hotspot!</string>
+     <string name="error_creating_ap">Errore duarante l\'attivazione dell\'hotspot, riprovare manualmente dalle impostazioni</string>
+    <string name="ap_password_summ">Imposta password tethering</string>
+    <string name="no_pass">Nessuna password</string>
+    <string name="stop_service">Ferma servizio</string>
+    <string name="disable_tether">Puoi disattivare il tethering</string>
+    <string name="server_running">Server in esecuzione</string>
+    <string name="received_file_directory">Cartella file ricevuti</string>
+    <string name="open_source">Licenze open source</string>
+    <string name="open_source_summ">Dettagli della licenza per il software open source</string>
+    <string name="build_version">Versione build</string>
+    <string name="version">Versione:</string>
+    <string name="info">Informazioni</string>
+    <string name="settings">Impostazioni</string>
+    <string name="hold_to_set_folder">Mantenere premuta la cartella dove si desidera ricevere i file</string>
+    <string name="directory_setted">Cartella impostata per ricevere i file:</string>
+    <string name="waring_mobile_data">Nessuna connessione wifi attiva! \nNota: questo consentira anche l\'accesso ai dati mobili se attivi</string>
+    <string name="enable_ap">Attivare tethering?</string>
+    <string name="yes">Attiva</string>
+    <string name="no">Chiudi</string>
+    <string name="frame_qr">Inquadra il codice QR</string>
+    <string name="send_file">Invia file</string>
+    <string name="no_file_selected">Nessun file selezionato!</string>
+    <string name="donwload_now">Scarica ora!</string>
+    <string name="user_data">Cartella principale</string>
+    <string name="nfc_use">Avvicina i due dispositivi mettendo a contatto le due parti posteriori, quindi toccare lo schermo.</string>
+    <string name="order_by">Ordina per</string>
+	<string name="no_permission">Nessun permesso per accedere alla directory</string>
+	<string name="no_permission_write">Impossibile impostare la cartella per ricevere i file: nessun permesso!</string>
+    <string name="external_directory">Vai alla directory esterna</string>
+	<string name="drawer_open">Apri menù</string>
+	<string name="drawer_close">Chiudi menù</string>
+	<string name="select_apps">Seleziona applicazioni</string>
+	<string name="list_type">Visualizzazione lista</string>
+	<string name="grid_type">Visualizzazione griglia</string>
+	<string name="now_playing">In Riproduzione</string>
+	<string name="all_songs">Tutti i brani</string>
+	<string name="only_mp3">Impossibile riprodurre: Supportati solo file mp3</string>
+	
+	<string name="guide_title">Guida</string>
+	<string name="generic_guide">Questa è una guida molto utile</string>
+	
+	
+	<string name="unknown_artist">Artista sconosciuto</string>
+	<string name="songs">brani</string>
+	
+	<string name="beta_message"><b>Avvertenze:</b> Versione Beta. L\'uso di questa applicazione potrebbe comportare la generazione di un strappo temporale concatenato all\'apertura di un buco nero nonchè indurre danni a cose, persone ed animali.
+	    Ad ogni modo si prega di segnalare qualsiasi bug. </string>
+	
+	<string name="beta_message_ok">Ok, rischierò!</string>
+	
+	<string name="sound_beam">SoundBeam</string>
+   <string name="sound_beam_sum">Sincronizza l\'audio in tutti i dispositivi</string>
+    
+   	<string name="guide_link">http://jbench.altervista.org/help/help-it.html</string>
+   	<string name="no_connection">Nessuna connessione per visualizzare la guida</string>
+   	<string name="protected_app">Impossibile inviare: app protetta</string>
+   	
+   	
+   	
+   	<string name="audio_latency">Ritardo audio Android</string>    
+	<string name="audio_latency_sum">Android ha un ritardo dell\'audio che dipende dal dispositivo, prova a cambiare questo per una migliore sincroinizzazione</string>    
+	<string name="queue">Coda</string>
+	<string name="play_now">RIPRODUCI</string>
+	<string name="add_queue">CODA</string>
+	<string name="slide_slow">Fai scorrere lo slide finchè non senti alcun eco</string>
+	<string name="should_start_music_video">Prima di fare questa operazione dovresti avviare un brano/video</string>
+	
+	<string name="sound_beam_not_supported">Soundbeam non è supportato da questo browser, riprova con uno di questi</string>
+	
+	<string name="changelog_message">Questa applicazione è stata <b>rinominata</b> da WifiQr a <b>IPCast</b> e ora include queste nuove caratteristiche: \n\n
+&#8226; Inviare <b>applicazioni.</b>\n
+&#8226; Visualizzare <b>foto</b> (click lungo sulla foto).\n
+&#8226; Effettuare streaming di <b>musica e video</b> (click lungo sul brano/video).\n
+&#8226; Sincronizzare l\'audio tra i dispositivi tramite <b>Soundbeam</b> (supportato da Chrome, Firefox e Opera).\n
+&#8226; Creare <b>code</b> con video e file audio per la riproduzione.\n\n
+
+Questo aggiornamento porta anche un <b>refresh grafico</b> e tanti bugfix.</string>
+		
+
+	<string name="changelog_title">Novità, nuovo nome nuove funzionalità</string>
+	<string name="changelog_Ok_button">OK, non mostrare più</string>
+		
+		
+    
+    
+    <string-array name="drawer_menu">
+        <item>File Explorer</item>
+        <item>Applicazioni</item>
+        <item>"Immagini &amp; Video"</item>
+        <item>Musica</item>
+    </string-array>
+	
+    
+    <string-array name="order_names_files">
+        <item>Nome - Crescente</item>
+        <item>Nome - Decrescente</item>
+        <item>Dimensione - Crescente</item>
+        <item>Dimensione - Decrescente</item>
+        
+    </string-array>
+
+    
+    
+    <string-array name="order_names_photo">
+        <item>Più recenti</item>
+        <item>Tipo (Video o Foto)</item>
+        <item>Dimensione - Crescente</item>
+        <item>Dimensione - Decrescente</item>
+    </string-array>
+    
+    <string-array name="music_view">
+        <item>Artisti</item>
+        <item>Album</item>
+        <item>Brani</item>
+        <item>Generi</item>
+    </string-array>
+    
+    
+</resources>

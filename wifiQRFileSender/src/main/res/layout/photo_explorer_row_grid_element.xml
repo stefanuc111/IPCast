@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<it.SFApps.wifiqr.tool.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="250dp"
+    android:background="@drawable/layout_border"
+    android:padding="10dp" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/textViewElementName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        
+        android:scaleType="centerCrop"
+         />
+
+    <TextView
+        android:id="@+id/textViewElementName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="none"
+        android:fadingEdgeLength="80dp"
+        android:requiresFadingEdge="horizontal"
+        android:singleLine="true"
+        android:text="File Name"
+        android:textAlignment="center"
+        
+        android:textSize="18dp" />
+
+    <ImageView
+        android:id="@+id/imageViewPlay"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:src="@android:drawable/ic_media_play"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/selected_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_marginTop="19dp"
+        android:visibility="gone"
+        android:background="#77000000" >
+
+        <RelativeLayout
+            android:id="@+id/play_now"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:clickable="true"
+            android:layout_marginTop="15dp" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:duplicateParentState="false"
+                android:src="@drawable/ic_action_play_now" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/imageView1"
+                android:duplicateParentState="false"
+                android:text="@string/play_now"
+                android:textColor="#DDD"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+                        android:id="@+id/add_to_queue"
+            
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:duplicateParentState="false"
+            android:focusable="true"
+            android:clickable="true"
+            
+            android:layout_marginBottom="15dp" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:duplicateParentState="false"
+                android:src="@drawable/ic_action_add" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:layout_toRightOf="@+id/ImageView01"
+                android:duplicateParentState="false"
+                android:text="@string/add_queue"
+                android:textColor="#DDD"
+                android:textSize="23sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</it.SFApps.wifiqr.tool.CheckableRelativeLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<it.SFApps.wifiqr.tool.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/album_element_hight"
+
+     >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+         />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imageView"
+        android:background="@drawable/fading_background"
+        android:padding="5dp"
+         >
+
+        <TextView
+            android:id="@+id/textViewElementName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/album_text_bottom_margin"
+            android:ellipsize="none"
+            android:fadingEdgeLength="80dp"
+            android:requiresFadingEdge="horizontal"
+            android:singleLine="true"
+            android:text="File Name"
+            android:textAlignment="center"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+</it.SFApps.wifiqr.tool.CheckableRelativeLayout>

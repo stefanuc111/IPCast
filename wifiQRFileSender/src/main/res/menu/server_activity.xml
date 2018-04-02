@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wifiqr="http://schemas.android.com/apk/res-auto" >
+
+
+    <item
+        android:id="@+id/stop_service"
+        android:icon="@drawable/ic_action_stop"
+        android:title="@string/stop_service"
+        android:visible="true"
+        wifiqr:showAsAction="ifRoom"/>
+
+
+</menu>

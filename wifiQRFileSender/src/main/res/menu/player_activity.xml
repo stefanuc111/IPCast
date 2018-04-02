@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wifiqr="http://schemas.android.com/apk/res-auto" >
+
+    <item
+        android:id="@+id/clear_selection"
+        android:icon="@drawable/clear_icon"
+        android:title="@string/clear_selection"
+        android:visible="false"
+        wifiqr:showAsAction="ifRoom"/>
+
+</menu>

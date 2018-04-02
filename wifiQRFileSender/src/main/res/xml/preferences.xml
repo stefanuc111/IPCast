@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="auto_download"
+            android:summary="@string/auto_download_summ"
+            android:title="@string/auto_download" />
+
+        <EditTextPreference
+            android:defaultValue="8080"
+            android:key="srv_port"
+			android:inputType="number"
+            android:summary="@string/srv_port_summ"
+            android:title="@string/srv_port" />
+
+        <it.SFApps.wifiqr.tool.EditTextPreferencePass
+            android:defaultValue="12345678"
+            android:hint="@string/no_pass"
+            android:key="ap_password"
+            android:summary="@string/ap_password_summ"
+            android:title="@string/ap_password" />
+
+        <Preference
+            android:key="receive_path"
+            android:title="@string/received_file_directory" >
+        </Preference>
+        
+        
+           <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="sound_beam"
+            android:summary="@string/sound_beam_sum"
+            android:title="@string/sound_beam" />
+           
+           
+            <it.SFApps.wifiqr.tool.SeekBarPreference
+            android:defaultValue="0"
+            android:key="audio_latency"
+            android:numeric="integer"
+            android:summary="@string/audio_latency_sum"
+            android:dependency="sound_beam"
+            android:title="@string/audio_latency" />
+        
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/info" >
+        <Preference
+            android:key="open_source"
+            android:title="@string/open_source"
+            android:summary="@string/open_source_summ" >
+        </Preference>
+        <Preference
+            android:key="build_version"
+            android:title="@string/build_version" >
+        </Preference>
+
+        
+    </PreferenceCategory>
+
+</PreferenceScreen>
