@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 21
-    buildToolsVersion "21.1.2"
+    buildToolsVersion "26.0.2"
 
     defaultConfig {
         applicationId "it.SFApps.wifiqr"
@@ -25,6 +25,5 @@ dependencies {
     compile 'com.android.support:cardview-v7:21+'
 
     compile files('libs/jl1.0.1.jar')
-    compile files('libs/libGoogleAnalyticsServices.jar')
     compile 'com.google.android.gms:play-services:6.5.87'
 }
